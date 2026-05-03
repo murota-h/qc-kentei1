@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/src//**)",
+      "Bash(flutter pub *)",
+      "PowerShell(New-Item -ItemType Directory -Path \"c:\\\\src\\\\qc_kentei1\\\\assets\\\\icon\" -Force)",
+      "PowerShell(Rename-Item \"c:\\\\src\\\\qc_kentei1\\\\assets\\\\icon\\\\icon.png.png\" \"icon.png\")",
+      "PowerShell(gh --version)",
+      "PowerShell(gh auth status)",
+      "PowerShell(winget install --id GitHub.cli --silent --accept-package-agreements --accept-source-agreements)",
+      "PowerShell(flutter_launcher_icons --help 2>&1)",
+      "PowerShell(New-Item -ItemType Directory -Path \"c:\\\\src\\\\qc_kentei1\\\\.github\\\\workflows\" -Force)",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"User\"\\); gh --version)"
+    ]
+  }
+}
